@@ -209,6 +209,11 @@ public final class MainScreen extends javax.swing.JFrame {
         jlpInformations.setForeground(new java.awt.Color(255, 255, 255));
         jlpInformations.setMaximumSize(new java.awt.Dimension(400, 400));
 
+        listMunicipios.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                listMunicipiosMouseClicked(evt);
+            }
+        });
         listMunicipios.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 listMunicipiosValueChanged(evt);
@@ -366,6 +371,9 @@ public final class MainScreen extends javax.swing.JFrame {
         // Pegar o index selecionado pelo evento não funciona muito bem 
         onEstadoChanged();
     }//GEN-LAST:event_btnSearchMouseClicked
+    private void listMunicipiosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_listMunicipiosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_listMunicipiosMouseClicked
 
     /**
      * @param args the command line arguments
